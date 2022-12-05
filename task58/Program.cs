@@ -3,6 +3,8 @@
 // находить произведение двух матриц.
 
 
+
+
 int[,] CreateMatrix(int rows, int columns, int min, int max)
 {
     int[,] matrix = new int[rows, columns];
@@ -56,6 +58,7 @@ int[,] MultiplicationTwoMatrix(int[,] matr1, int[,] matr2)
 
 
 
+
 Console.WriteLine("Ведите колличесво строк для петвой матрицы : ");
 int m = Convert.ToInt32(Console.ReadLine());
 
@@ -67,6 +70,11 @@ int k = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Ведите колличесто столбцов второй матрицы: ");
 int l = Convert.ToInt32(Console.ReadLine());
+
+
+
+
+
 
 if (m != l) Console.WriteLine("Умножение не возможно! колличсево строк первой матрицы должно быть равно столбцам второй");
 else
@@ -80,9 +88,12 @@ else
     Console.WriteLine();
     Console.WriteLine();
 
-    int[,] result = MultiplicationTwoMatrix(matrix1, matrix2);
+   int[,] result = MultiplicationTwoMatrix(matrix1,matrix2);
     Console.WriteLine("Произведение двух матриц");
     PrintMatrix(result);
 
+
 }
+
+
 
